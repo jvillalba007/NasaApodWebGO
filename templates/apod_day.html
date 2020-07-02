@@ -1,0 +1,16 @@
+{{ define "apod" }}<br/>
+<main class="flex-shrink-0">
+    <div class="container">
+  <div class="card text-center">
+    <div class="card-header">{{.Title}}</div>
+    <img src="{{.URL}}" class="img-fluid" alt="{{.Title}}">
+    <div class="card-body">
+      <h5 class="card-title">Copyright: {{.Copyright}}</h5>
+      <p class="card-text text-justify">{{.Explanation}}</p>
+    </div>
+    <div class="card-footer text-muted">{{.Date}}
+    </div>
+  </div>
+    </div>
+  </main>
+<br/>{{ end }}

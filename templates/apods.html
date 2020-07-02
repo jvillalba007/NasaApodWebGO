@@ -1,0 +1,21 @@
+{{ define "apods" }}<br />
+<main class="flex-shrink-0">
+<div class="container mw-80">
+	<div class="card">
+	  <div class="card-header">
+    Astronomy pictures (APODS)
+  </div>
+  <div class="row text-center text-lg-left">
+    {{range .}}
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="{{.URL}}" class="d-block mb-4 h-100 glightbox4" data-glightbox="title: {{.Title}}; description: {{.Date}}">
+            <img class="img-fluid img-thumbnail" src="{{.URL}}" alt="{{.Title}}">
+          </a>
+    </div>
+    {{end}}
+  </div>
+
+	</div>
+</div>
+</main>
+<br />{{ end }}
