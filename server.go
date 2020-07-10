@@ -30,7 +30,7 @@ func Home(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	server := http.Server{
-		Addr: ":80",
+		Addr: ":8080",
     		ReadTimeout:  5 * time.Second,
     		WriteTimeout: 10 * time.Second,
     		IdleTimeout:  120 * time.Second,
